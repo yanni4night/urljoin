@@ -1,0 +1,27 @@
+{
+  "name": "url-join",
+  "version": "0.1.0",
+  "description": "Join the urls like joining the paths",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanni4night/url-join.git"
+  },
+  "keywords": [
+    "url",
+    "join"
+  ],
+  "author": "yanni4night@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yanni4night/url-join/issues"
+  },
+  "homepage": "https://github.com/yanni4night/url-join",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-nodeunit": "^0.4.1"
+  }
+}
