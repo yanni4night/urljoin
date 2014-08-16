@@ -1,5 +1,5 @@
 {
-  "name": "url-join",
+  "name": "urljoin",
   "version": "0.1.0",
   "description": "Join the urls like joining the paths",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yanni4night/url-join.git"
+    "url": "https://github.com/yanni4night/urljoin.git"
   },
   "keywords": [
     "url",
@@ -17,11 +17,16 @@
   "author": "yanni4night@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yanni4night/url-join/issues"
+    "url": "https://github.com/yanni4night/urljoin/issues"
   },
-  "homepage": "https://github.com/yanni4night/url-join",
+  "homepage": "https://github.com/yanni4night/urljoin",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-nodeunit": "^0.4.1"
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "dependencies": {
+    "extend": "~1.3.0"
   }
 }
