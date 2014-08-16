@@ -21,6 +21,8 @@ usage
     urljoin("/?aa=60", 'static?bb=70', 'css?cc=80', 'main.css?dd=90'));
     //static/css/main.css?aa=60
     urljoin('static/css','main.css','?aa=60');
+    //http://yanni4night.com/static/build
+    urljoin('http://yanni4night.com/static','http://google.com/build')
 
 
  - Only the **protocol/port/host** will be saved
