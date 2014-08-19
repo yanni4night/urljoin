@@ -4,9 +4,10 @@
  *
  * changelog
  * 2014-08-16[14:31:02]:authorized
+ * 2014-08-19[14:05:43]:fixed crash when first piece is empty
  *
  * @author yanni4night@gmail.com
- * @version 0.1.0
+ * @version 0.1.1
  * @since 0.1.0
  */
 /*jslint node: true */
@@ -21,7 +22,7 @@ var path = require('path');
  *
  * Only the protocol/port/host in the first piece is saved,but all the get parameters
  * will be saved.
- * 
+ *
  * @param {String|Function}... Multiple url pieces in function or string type.
  * @return {String} The URL joined.
  */
@@ -30,7 +31,7 @@ module.exports = function urljoin() {
     //convert to Array
     var pieces = Array.prototype.slice.call(arguments);
     var query = {};
-    var first,paths;
+    var first, paths;
 
     if (!pieces.length) {
         return '';
@@ -38,16 +39,16 @@ module.exports = function urljoin() {
         return pieces[0];
     }
 
-    paths = pieces.map(function(piece, idx) {
+    paths = pieces.map(function(piece) {
         var pieceStr = 'function' === typeof piece ? piece() : String(piece || "");
-        
+
         if (!pieceStr) {
             return '';
         }
-        
+
         var parsed = url.parse(pieceStr, true);
-        
-        if (!idx) {
+
+        if (!first && parsed) {
             first = parsed;
         }
 
@@ -57,7 +58,7 @@ module.exports = function urljoin() {
         return !!piece;
     });
 
-    delete first.search;//we use query instead of search
+    delete first.search; //we use query instead of search
     first.query = query;
     first.pathname = path.join.apply(path, paths);
     return url.format(first);

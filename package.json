@@ -1,6 +1,6 @@
 {
   "name": "urljoin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Join the urls like joining the paths",
   "main": "index.js",
   "scripts": {
