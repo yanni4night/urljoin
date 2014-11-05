@@ -25,7 +25,7 @@ usage
     urljoin('http://yanni4night.com/static','http://google.com/build')
 
 
- - Only the **protocol/port/host** will be saved
+ - Only the **protocol/port/host** in the first part will be saved
  - Get parameters will be **all** saved
 
 author
