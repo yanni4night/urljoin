@@ -15,6 +15,9 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         jshint: {
+            options:{
+                node: true
+            },
             index: ['index.js']
         },
         watch: {

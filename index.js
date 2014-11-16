@@ -5,12 +5,13 @@
  * changelog
  * 2014-08-16[14:31:02]:authorized
  * 2014-08-19[14:05:43]:fixed crash when first piece is empty
+ * 2014-11-16[21:15:06]:support windows \\
  *
  * @author yanni4night@gmail.com
- * @version 0.1.1
+ * @version 0.1.2
  * @since 0.1.0
  */
-/*jslint node: true */
+
 "use strict";
 
 var extend = require('extend');
@@ -60,6 +61,6 @@ module.exports = function urljoin() {
 
     delete first.search; //we use query instead of search
     first.query = query;
-    first.pathname = path.join.apply(path, paths);
+    first.pathname = path.join.apply(path, paths).replace(new RegExp('\\' + path.sep, 'g'), '/');
     return url.format(first);
 };
