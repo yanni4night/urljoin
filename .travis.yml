@@ -1,3 +1,5 @@
 language: node_js
+before_install:
+  - sudo npm install grunt-cli -g
 node_js:
   - "0.10"
