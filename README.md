@@ -9,7 +9,9 @@ usage
 ========
 
     var urljoin = require('urljoin');
-
+    
+    ///static/css/index.css
+    urljoin('\\static', '\\css', 'index.css');
     //http://yanni4night.com/static/index/main.css
     urljoin("http://yanni4night.com", 'static/css', '../index', 'main.css');
     //http://yanni4night.com/static/css/main.css
