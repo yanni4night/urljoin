@@ -1,5 +1,6 @@
 language: node_js
 before_install:
-  - sudo npm install grunt-cli -g
+  - npm install -g grunt-cli
+  - npm uninstall grunt # https://github.com/npm/npm/issues/3958
 node_js:
-  - "0.10"
+  - "0.10" 

@@ -1,5 +1,6 @@
 urljoin
 ========
+[![Build Status](https://travis-ci.org/yanni4night/urljoin.svg?branch=master)](https://travis-ci.org/yanni4night/urljoin)
 
 Join the urls like joining the paths
 
