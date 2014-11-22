@@ -1,6 +1,6 @@
 urljoin
 ========
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Support us][gittip-image]][gittip-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Build status][appveyor-image]][appveyor-url] [![Built with Grunt][grunt-image]][grunt-url]
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]  [![Build Status][travis-image]][travis-url] [![Build status][appveyor-image]][appveyor-url] [![Dependency status][david-dm-image]][david-dm-url] [![Built with Grunt][grunt-image]][grunt-url]
 
 Join the urls like joining the paths
 
@@ -36,10 +36,6 @@ author
 
  - yanni4night@gmail.com
 
-
-[gittip-url]: https://www.gittip.com/yanni4night/
-[gittip-image]: http://img.shields.io/gittip/yanni4night.svg
-
 [downloads-image]: http://img.shields.io/npm/dm/urljoin.svg
 [npm-url]: https://npmjs.org/package/urljoin
 [npm-image]: http://img.shields.io/npm/v/urljoin.svg
@@ -47,11 +43,11 @@ author
 [travis-url]: https://travis-ci.org/yanni4night/urljoin
 [travis-image]: http://img.shields.io/travis/yanni4night/urljoin.svg
 
-[coveralls-url]: https://coveralls.io/r/yanni4night/urljoin
-[coveralls-image]: http://img.shields.io/coveralls/yanni4night/urljoin/master.svg
-
 [grunt-url]:http://gruntjs.com/
 [grunt-image]: http://img.shields.io/badge/BUILT%20WITH-GRUNT-yellow.svg
 
 [appveyor-image]:https://ci.appveyor.com/api/projects/status/ildoo8h6ewphy8we?svg=true
 [appveyor-url]:https://ci.appveyor.com/project/yanni4night/urljoin
+
+[david-dm-url]:https://david-dm.org/yanni4night/urljoin
+[david-dm-image]:https://david-dm.org/yanni4night/urljoin.svg
