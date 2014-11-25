@@ -12,28 +12,33 @@
 
 
 module.exports = function(grunt) {
+
+    require('time-grunt')(grunt);
+    require('load-grunt-tasks')(grunt);
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         jshint: {
-            options:{
+            options: {
                 node: true
             },
             index: ['index.js']
         },
         watch: {
             index: {
-                files: ['index.js','test/*.js'],
+                files: ['index.js', 'test/*.js'],
                 tasks: ['test']
             }
         },
         nodeunit: {
             tests: ['test/*_test.js']
+        },
+        coveralls: {
+            all: {
+                src: 'coverage/lcov.info'
+            }
         }
     });
-
-    grunt.loadNpmTasks("grunt-contrib-jshint");
-    grunt.loadNpmTasks("grunt-contrib-watch");
-    grunt.loadNpmTasks("grunt-contrib-nodeunit");
 
     grunt.registerTask('default', ['jshint']);
     grunt.registerTask('test', ['default', 'nodeunit']);

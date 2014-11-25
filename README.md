@@ -1,6 +1,6 @@
 urljoin
 ========
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]  [![Build Status][travis-image]][travis-url] [![Build status][appveyor-image]][appveyor-url] [![Dependency status][david-dm-image]][david-dm-url] [![Built with Grunt][grunt-image]][grunt-url]
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Build status][appveyor-image]][appveyor-url] [![Dependency status][david-dm-image]][david-dm-url] [![De vDependency status][david-dm-dev-image]][david-dm-dev-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Built with Grunt][grunt-image]][grunt-url]
 
 Join the urls like joining the paths
 
@@ -36,18 +36,18 @@ author
 
  - yanni4night@gmail.com
 
-[downloads-image]: http://img.shields.io/npm/dm/urljoin.svg
 [npm-url]: https://npmjs.org/package/urljoin
+[downloads-image]: http://img.shields.io/npm/dm/urljoin.svg
 [npm-image]: http://img.shields.io/npm/v/urljoin.svg
-
 [travis-url]: https://travis-ci.org/yanni4night/urljoin
 [travis-image]: http://img.shields.io/travis/yanni4night/urljoin.svg
-
-[grunt-url]:http://gruntjs.com/
-[grunt-image]: http://img.shields.io/badge/BUILT%20WITH-GRUNT-yellow.svg
-
-[appveyor-image]:https://ci.appveyor.com/api/projects/status/ildoo8h6ewphy8we?svg=true
+[appveyor-image]:https://ci.appveyor.com/api/projects/status/bsu9w9ar8pboc2nj?svg=true
 [appveyor-url]:https://ci.appveyor.com/project/yanni4night/urljoin
-
 [david-dm-url]:https://david-dm.org/yanni4night/urljoin
 [david-dm-image]:https://david-dm.org/yanni4night/urljoin.svg
+[david-dm-dev-url]:https://david-dm.org/yanni4night/urljoin#info=devDependencies
+[david-dm-dev-image]:https://david-dm.org/yanni4night/urljoin/dev-status.svg
+[coveralls-url]:https://coveralls.io/r/yanni4night/urljoin?branch=master
+[coveralls-image]:https://coveralls.io/repos/yanni4night/urljoin/badge.png?branch=master
+[grunt-url]:http://gruntjs.com/
+[grunt-image]: http://img.shields.io/badge/BUILT%20WITH-GRUNT-yellow.svg
