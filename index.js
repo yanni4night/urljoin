@@ -12,7 +12,7 @@
  * @since 0.1.0
  */
 
-"use strict";
+'use strict';
 
 var extend = require('extend');
 var url = require('url');
@@ -41,7 +41,7 @@ module.exports = function urljoin() {
     }
 
     paths = pieces.map(function(piece) {
-        var pieceStr = 'function' === typeof piece ? piece() : String(piece || "");
+        var pieceStr = 'function' === typeof piece ? piece() : String(piece || '');
 
         if (!pieceStr) {
             return '';
