@@ -12,6 +12,8 @@ usage
     
     ///static/css/index.css
     urljoin('\\static', '\\css', 'index.css');
+    //../../css/main.css
+    urljoin('../../','css','main.css')
     //http://yanni4night.com/static/index/main.css
     urljoin("http://yanni4night.com", 'static/css', '../index', 'main.css');
     //http://yanni4night.com/static/css/main.css
@@ -50,4 +52,4 @@ author
 [coveralls-url]:https://coveralls.io/r/yanni4night/urljoin?branch=master
 [coveralls-image]:https://coveralls.io/repos/yanni4night/urljoin/badge.png?branch=master
 [grunt-url]:http://gruntjs.com/
-[grunt-image]: http://img.shields.io/badge/BUILT%20WITH-GRUNT-yellow.svg
+[grunt-image]: https://cdn.gruntjs.com/builtwith.png

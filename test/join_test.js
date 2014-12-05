@@ -29,8 +29,8 @@ exports.url_join = {
     done();
   },
   join: function(test) {
-    test.expect(10);
     test.deepEqual('', urljoin(), 'Empty argument');
+    test.deepEqual('../../css/main.css',urljoin('../../','css','main.css'),'Super directory')
     test.deepEqual('/static/css/index.css', urljoin('\\static', '\\css', 'index.css'));
     test.deepEqual('http://yanni4night.com/static/index/main.css', urljoin("http://yanni4night.com", 'static/css', '../index', 'main.css'), '../');
     test.deepEqual('http://yanni4night.com/static/css/main.css', urljoin("http://yanni4night.com/", '/static/css/', '/main.css'), '/');
